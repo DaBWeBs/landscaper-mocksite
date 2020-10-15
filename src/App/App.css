@@ -1,0 +1,263 @@
+/* Keyframes */
+
+@keyframes slide {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(75px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slidebtn {
+  0% {
+    transform: translateX(-300px);
+  }
+  50% {
+    transform: translateX(75px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* Default */
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  text-align: center;
+  background-color: rgba(85, 107, 47, 0.741);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkgreen;
+}
+
+.logo {
+  margin-left: 1%;
+  color: white;
+  font-weight: bold;
+}
+
+.wrap {
+  display: flex;
+  width: 33%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.wrap > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.wrap > a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.wrap > a:first-child {
+  color: black;
+  text-decoration: underline;
+}
+
+.homepage {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.homepage > .imgwrap {
+  background-image: url('../Assets/hero-cover.jpg');
+  /* opacity: 0.6; */
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column wrap;
+}
+
+.homepage .imgwrap h2.banner {
+  color: white;
+  margin-left: 50px;
+  /* transition: slide 0.6s ease-out; */
+  animation: slide 1s;
+  opacity: 1;
+}
+
+.homepage .imgwrap .herobtn {
+  margin-left: 220px;
+  height: 30px;
+  width: 100px;
+  border: none;
+  box-shadow: 15px 12px 17px 6px rgba(0, 0, 0, 0.8);
+  background-color: darkgreen;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  animation: slide 1s;
+  animation-delay: 0.5s;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-out;
+}
+
+.homepage .imgwrap .herobtn:hover {
+  background-color: white;
+  color: darkgreen;
+}
+
+.heading {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.infowrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  margin-left: -30px;
+}
+
+.info1,
+.info2 {
+  width: 45%;
+  background-color: lightgreen;
+  border-radius: 10px;
+  box-shadow: 5px 8px 31px -1px darkgreen;
+  padding: 15px;
+}
+
+.portfolio {
+  text-align: left;
+}
+
+.portfolio > h3 {
+  margin-left: 100px;
+}
+
+.cardwrap {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  background-color: lightgreen;
+  border-radius: 10px;
+  box-shadow: 5px 8px 31px -1px darkgreen;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.cardinfowrap {
+  padding: 10px;
+}
+
+.foot {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgba(0, 100, 0, 0.664);
+}
+
+.copy {
+  color: white;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footlogo {
+  color: white;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.footwrap {
+  display: flex;
+  flex-flow: column wrap;
+  /* margin-left: 15px;
+  margin-bottom: 20px; */
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.footwrap .link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+}
+
+.footwrap .link:first-child {
+  color: black;
+  text-decoration: underline;
+}
+
+.footwrap .link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.informationalpara {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.informationalpara p {
+  width: 75%;
+  text-align: center;
+}
